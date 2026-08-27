@@ -69,12 +69,12 @@ li a:hover {
     text-align: center;
 }
 
-   .main-heading {
-       position: absolute;
-       top:7rem;
-       font-size: 4rem;
-       word-spacing: 10px;
-       margin-bottom: -40;
+.main-heading {
+    position: absolute;
+    top:7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -40;
    }
 
 .primary-heading {
@@ -90,7 +90,84 @@ li a:hover {
     bottom: 2rem;
     padding: 10px 30px;
     margin-top: 20px;
-    background: transparent;
-    background: var(--main-color);
+    border-radius: 0.6rem;
+    background: radial-gradient(at left center, #763f00, #ffe1c6);
     transform: translateY(60px);
+    cursor: pointer;
+}
+
+#our-story {
+    height: 100vh;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img {
+    width: 40vw;
+    height: 500px;
+    background: url(assets/vecteezy_coffee-beans-with-green-leaf_74766220.png);
+    background-position: center;
+    background-size: cover;
+}
+.title-style {
+    display: flex;
+    align-items: center;            
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    transform: translateX(-100px);
+    margin-bottom: 30px;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    transform: translate(-120px, -1.7rem);
+}
+
+.section-content .paragraph {
+    max-width: 600px;
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.btn-2 {
+    position: relative;
+    bottom: 2rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 0.6rem;
+    background: radial-gradient(at left center, #86ff3ddc, #fcc673);
+    transform: translateY(60px);
+    cursor: pointer;
+    
+}
+
+/* our story end */
+
+@media only screen and (max-width: 1100px) {
+    #our-story {
+        padding-top: 6rem;
+        padding-left: 5rem;
+    }
+    .line {
+        display: none;    
+    }
+    .img {
+        display: none;
+    }
+    .title {
+        transform: translateX(0);
+        padding-top: 10rem;
+        margin-top: 5vh;
+    }
 }
