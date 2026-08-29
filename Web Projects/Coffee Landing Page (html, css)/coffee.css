@@ -156,18 +156,30 @@ li a:hover {
 
 @media only screen and (max-width: 1100px) {
     #our-story {
-        padding-top: 6rem;
-        padding-left: 5rem;
+        padding-top: 1rem;
+        padding-left: 0rem;
+        height: 120vh;
+        flex-wrap: wrap;
     }
     .line {
         display: none;    
     }
     .img {
-        display: none;
+        width: 100vw;
+        height: 400px
     }
     .title {
         transform: translateX(0);
-        padding-top: 10rem;
+        padding-top: 2em;
         margin-top: 5vh;
+    }
+    .section-content .paragraph {
+        padding-left: 1rem;
+    }
+    .title {
+        padding-left: 1rem;
+    }
+    .btn-2 {
+        margin-left: 1rem;
     }
 }
