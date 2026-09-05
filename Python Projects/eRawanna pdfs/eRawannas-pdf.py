@@ -109,31 +109,6 @@ def fetch_single_pdf(r_id, output_dir):
             print(f"Browser crashed on {r_id}. Rebooting browser...")
             driver = setup_driver()
             time.sleep(5)
-            
-# def print_rawannas():
-#     num_rawannas = len(rawanna_numbers)
-    
-#     if num_rawannas == 0:
-#         print("No eRawannas found in the file. Exiting.")
-#         return
-
-#     actual_workers = min(num_rawannas, MAX_WORKERS)
-    
-#     print(f"\n--- Initializing {actual_workers} background browsers... ---")
-    
-#     for i in range(actual_workers):
-#         print(f"Starting browser {i+1} of {actual_workers}...")
-#         driver_pool.put(setup_driver())
-#         time.sleep(7) 
-        
-#     print("--- Starting Batch PDF Generation ---")
-#     output_dir = "Rawanna_PDFs"
-#     os.makedirs(output_dir, exist_ok=True)
-#     successful_pdfs = []
-    
-#     try:
-#         with ThreadPoolExecutor(max_workers=actual_workers) as executor:
-#             results = executor.map(lambda r_id: fetch_single_pdf(r_id, output_dir), rawanna_numbers)
 
 def boot_browsers_slowly(actual_workers):
     """This runs invisibly in the background, feeding browsers to the queue."""
